@@ -1,0 +1,227 @@
+body {
+  margin: 0;
+  padding: 0
+}
+body .land-header {
+  width: 100%;
+  display: block;
+  background-color: #282828;
+  z-index: 20
+}
+body .land-header__wrapper {
+  max-width: 1000px;
+  display: block;
+  margin: auto;
+  padding: 5px 20px
+}
+body .land-header__wrapper__logo {
+  display: inline-block;
+  height: auto
+}
+body .land-header__wrapper__logo_icon {
+  height: 25px;
+  margin: 5px 0
+}
+body .land-header__wrapper__signin {
+  display: inline-block;
+  float: right;
+  margin: 9px 0 0;
+  font-family: 'Open Sans', sans-serif
+}
+body .content {
+  width: 100%;
+  display: block;
+  min-height: calc(100vh - 30px);
+  margin: 0
+}
+body .footer {
+  width: 100%;
+  background-color: #282828;
+  bottom: 0;
+  z-index: 20;
+  position: relative
+}
+body .footer__wrapper {
+  max-width: 1000px;
+  display: block;
+  margin: auto;
+  padding: 10px 20px
+}
+body .footer__wrapper_links {
+  font-size: 10px;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px 0 0;
+  font-family: 'Open Sans', sans-serif;
+  transition: .7s;
+  -moz-transition: .7s
+}
+body .footer__wrapper_links:hover {
+  opacity: .7
+}
+@media screen and (max-width:1025px) {
+  body {
+    min-height: 100%!important
+  }
+  .footer {
+    display: block!important;
+    position: relative!important
+  }
+}
+@media screen and (max-width:768px) {
+  body {
+    min-height: 100%!important
+  }
+  .footer {
+    display: block!important;
+    position: relative!important
+  }
+}
+.visible {
+  visibility: visible
+}
+.hide {
+  display: none!important
+}
+.preloader {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  left: -2000px;
+  top: -2000px
+}
+.bg-step {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: #202f3e;
+  background-size: cover;
+  padding: 0;
+  margin: 0
+}
+.bg-step-1 {
+  background-image: url(../images/bg2.jpg)
+}
+@media (max-width:990px) {
+  .bg-step-1 {
+    background-image: url(../images/bg2.jpg)
+  }
+  .preloader {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    left: -2000px;
+    top: -2000px
+  }
+}
+.form-content {
+  min-height: calc(100vh - 30px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end
+}
+.view {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-family: Muli, sans-serif;
+  padding: 15px 15px 120px;
+  box-sizing: border-box
+}
+.view.center {
+  padding: 15px;
+  margin: auto
+}
+.view-content-button {
+  box-sizing: border-box;
+  padding: 15px 5px;
+  width: 100%;
+  max-width: 680px;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+  background-color: #fc9b0261;
+  border: 3px solid #fc9b02;
+  outline: none;
+  transition: .4s;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, .57);
+  z-index: 20;
+  margin: 35px auto 0;
+  display: block;
+  text-decoration: none;
+}
+.view-content-button:hover {
+  background-color: #fc9b02
+}
+.view-content-button:active,
+.view-content-button:hover {
+  border: 3px solid #fc9b02;
+  color: #000;
+  text-shadow: none;
+  transition: .4s
+}
+.view-content-button:active {
+  background-color: rgba(252, 155, 2, .51)
+}
+.view-content-subheading {
+  font-size: 36px;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 0;
+  color: #fff;
+  text-shadow: 0 3px 5px #000;
+  margin: 0
+}
+.form-component {
+  padding: 0;
+  margin: 0
+}
+.form-container {
+  height: 100%;
+  width: 100%
+}
+.hidden-gender-input {
+  display: none
+}
+.validated {
+  visibility: hidden
+}
+.options-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px
+}
+@media (max-width:990px) {
+  .view {
+    padding: 20px 40px 70px
+  }
+  .view-content-button {
+    max-width: 670px
+  }
+}
+@media (max-width:600px) {
+  .view-content-subheading {
+    font-size: 20px
+  }
+  .view-content-button {
+    font-size: 14px;
+    padding: 5px;
+    margin-top: 20px
+  }
+  .view {
+    padding: 20px 10px 130px
+  }
+  .options-wrapper {
+    flex-direction: column;
+    margin-bottom: 0
+  }
+}
